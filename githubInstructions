@@ -2,6 +2,9 @@
 git init
 git remote add origin https://github.com/fabiomatricardi/Medium-ScrapeStatsEarns.git
 
+#more about gitignore
+https://linuxize.com/post/gitignore-ignoring-files-in-git/
+
 echo > .gitignore
 
 to remove all staged files at once
