@@ -3,3 +3,22 @@ git init
 git remote add origin https://github.com/fabiomatricardi/Medium-ScrapeStatsEarns.git
 
 echo > .gitignore
+
+to remove all staged files at once
+git reset HEAD -- .
+
+PS C:\Users\fmatricard\Videos\2023.04\2023.06 personal\bs4> git push -u origin master
+Enumerating objects: 21, done.
+Counting objects: 100% (21/21), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (21/21), done.
+Writing objects: 100% (21/21), 75.14 KiB | 2.09 MiB/s, done.
+Total 21 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), done.
+remote: 
+remote: Create a pull request for 'master' on GitHub by visiting:
+remote:      https://github.com/fabiomatricardi/Medium-ScrapeStatsEarns/pull/new/master
+remote:
+To https://github.com/fabiomatricardi/Medium-ScrapeStatsEarns.git
+ * [new branch]      master -> master
+Branch 'master' set up to track remote branch 'master' from 'origin'.
