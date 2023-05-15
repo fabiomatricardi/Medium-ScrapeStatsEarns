@@ -1,0 +1,5 @@
+.\gh auth login
+git init
+git remote add origin https://github.com/fabiomatricardi/Medium-ScrapeStatsEarns.git
+
+echo > .gitignore
