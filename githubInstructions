@@ -25,3 +25,19 @@ remote:
 To https://github.com/fabiomatricardi/Medium-ScrapeStatsEarns.git
  * [new branch]      master -> master
 Branch 'master' set up to track remote branch 'master' from 'origin'.
+
+# to align files in Github to your local repo use
+git pull origin master
+
+Force git pull to Overwrite Local Files
+If you have made commits locally that you regret, you may want your local branch to match the remote branch without saving any of your work. This can be done using git reset. First, make sure you have the most recent copy of that remote tracking branch by fetching.
+
+git fetch <remote> <branch>
+ex: git fetch origin main
+
+Then, use git reset --hard to move the HEAD pointer and the current branch pointer to the most recent commit as it exists on that remote tracking branch.
+
+git reset --hard <remote>/<branch>
+ex: git reset --hard origin/main
+
+_Note: You can find the remotes with git remote -v, and see all available remote tracking branches with git branch --all.
