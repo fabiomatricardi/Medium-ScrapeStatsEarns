@@ -104,7 +104,11 @@ html2 = BeautifulSoup(htmlstat, 'html.parser')
 totals_table = html2.find_all('div',class_ = 'u-flex u-flexRow u-xs-flexColumnReverse u-justifyContentSpaceBetween')
 len(totals_table)
 total_earnings = totals_table[0].find('div',class_ = 'u-inline u-fontSize22 u-uiTextThin js-payoutTotal u-fontWeightBold').text
-total_amount = float(total_earnings[1:])
+total_referred = html2.find_all('div',class_ = 'u-inline u-fontSize22 u-uiTextThin js-payoutTotal')[1].text
+total_articles = html2.find_all('div',class_ = 'u-inline u-fontSize22 u-uiTextThin js-payoutTotal')[0].text
+articles_amount =total_articles[1:] 
+referred_amount =total_referred[1:] 
+total_amount = total_earnings[1:]
 #print(total_amount)
 #------------------Create main table-------------------------------------
 table = html2.find_all('table',class_ = 'table u-marginTop20 u-marginBottom30 u-borderBottomLighter u-borderBottomWidth2')
@@ -125,6 +129,16 @@ for i in range(0,tot_articles):
   earn_earning_list.append(float(e_earns[1:]))
   date_list.append(date_of_stat)
   hour_list.append(hour_of_stat)  
+#-------Create referral row------------------
+title_earning_list.append("Referral Earnings")
+earn_earning_list.append(referred_amount)
+date_list.append(date_of_stat)
+hour_list.append(hour_of_stat)
+#-------Create total articles row------------------
+title_earning_list.append("Articles Earnings")
+earn_earning_list.append(articles_amount)
+date_list.append(date_of_stat)
+hour_list.append(hour_of_stat)
 #-------Create summary row------------------
 title_earning_list.append("Total Earnings")
 earn_earning_list.append(total_amount)
