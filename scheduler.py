@@ -90,7 +90,7 @@ with console.status("Waiting the scheduled time...", spinner="runner"):
             df.to_csv(filename)  
             print(f"File {filename} saved on your disk")
             #-----Save Articles stats only related to earnings--------------------
-            index = [0,2,4,6,8, 11] #order from index of the dataframe - old [0,2,4,6,10]
+            index = [0,1,2,4,7,9,10,13] #order from index of the dataframe - old [0,2,4,6,10]
             df_4earn = df.loc[index]
             filename2 = f"Medium_4earn_{date_of_stat}at{hour_of_stat}{minutes}.csv"
             df_4earn.to_csv(filename2)  
