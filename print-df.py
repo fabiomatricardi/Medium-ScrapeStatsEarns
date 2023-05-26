@@ -62,6 +62,12 @@ a_query = "What is the from we size of LaMini models"
 #result = highlight(a_text,a_query,'pippo')
 console.print(highlight(a_text,a_query,'pippo'))
 
+"""
+list of words to be removed not relevant for semantic search
+meno = ['is','the','are','we','of','in','for']
+l1 = [item for item in a_query if item not in meno]
+
+"""
 
 """
 # THIS SOLUTION IS THE BEST BUT I DON'T KNOW HOW TO USE IT WITH RICH!!!!!

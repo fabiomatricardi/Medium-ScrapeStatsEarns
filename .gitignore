@@ -39,3 +39,4 @@ Thumbs.db
 # virtual env directory #
 #########################
 .venv/
+venv/
